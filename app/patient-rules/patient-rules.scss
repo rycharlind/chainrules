@@ -1,0 +1,21 @@
+.patient-rules {
+    height: 100%;
+    overflow: hidden;
+
+    &-header {
+        margin-top: 64px;
+    }
+
+    md-toolbar, .md-toolbar-tools {
+        max-height: 150px;
+        height: 150px;
+    }
+
+    md-input-container {
+        margin-right: 16px;
+    }
+
+    md-select {
+        
+    }
+}

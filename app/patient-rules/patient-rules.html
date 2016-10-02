@@ -1,0 +1,44 @@
+<div class="patient-rules">
+    <div class="patient-rules-content">
+        <div class="patient-rules-header">
+            <md-toolbar>
+                <div class="md-toolbar-tools">        
+                    <div layout="row" layout-align="start center">
+                        <md-input-container>
+                            <label>Organization</label>
+                            <md-select ng-model="vm.organization">
+                                <md-option ng-value="insurance">Insurance</md-option>
+                                <md-option ng-value="university">University</md-option>
+                            </md-select>
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Carrier</label>
+                            <md-select ng-model="vm.carrier">
+                                <md-option ng-value="allstate">Allstate</md-option>            
+                                <md-option ng-value="geico">Geico</md-option>            
+                                <md-option ng-value="stateFarm">State Farm</md-option>       
+                            </md-select>
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Rule</label>
+                            <md-select ng-model="vm.rule">
+                                <md-option ng-value="superPreferred">Super Preferred</md-option>            
+                                <md-option ng-value="preferred">Preferred</md-option>            
+                                <md-option ng-value="substandard">Substandard</md-option>        
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                </div>
+            </md-toolbar>
+        </div>
+    </div>
+
+    <div layout="row">
+        <div ng-repeat="patient in patients">
+            
+        </div>
+    </div>
+    </div>
+</div>

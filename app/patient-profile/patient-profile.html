@@ -1,0 +1,263 @@
+<div class="patient-profile" layout="row">
+  <md-sidenav class="side-nav md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')" md-whiteframe="4">
+    <md-content>
+      <md-list flex>
+        <md-list-item>
+          <md-button><i class="fa fa-warning"></i> Alerts</md-button>
+        </md-list-item>
+        <md-list-item>
+          <md-button><i class="fa fa-file-text-o"></i> Policies</md-button>
+        </md-list-item>
+        <md-list-item>
+          <md-button><i class="fa fa-cog"></i> Settings</md-button>
+        </md-list-item>
+        <md-list-item>
+          <md-button><i class="fa fa-question-circle-o"></i> Help</md-button>
+        </md-list-item>
+      </md-list>
+    </md-content>
+  </md-sidenav>
+  
+  <div layout="column" layout-padding flex class="patient-profile-content">
+    <div layout="row" class="patient-profile-header">
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <div layout="row" class=patient-profile-header-details>
+              <md-list class="md-dense">
+                <md-list-item class="md-2-line">
+                  <!--<img ng-src="" class="md-avatar" alt="person" />-->
+                  <i class="fa fa-user md-avatar"></i>
+                  <div class="md-list-item-text" layout="column">
+                    <h3>Smith, John (SMIJO01234)</h3>
+                    <h4>04/16/82 (34 years old) - M</h4>
+                  </div>
+                </md-list-item>
+              </md-list>
+            </div>
+            <div layout="row" class="patient-profile-header-nav" layout-align="start end" flex>
+              <md-nav-bar md-selected-nav-item="'profile'" nav-bar-aria-label="navigation links">
+                <md-nav-item md-nav-click="goto('profile')" name="profile">Profile</md-nav-item>
+                <md-nav-item md-nav-click="goto('notes')" name="notes">Notes</md-nav-item>
+                <md-nav-item md-nav-click="goto('documents')" name="documents">Documents</md-nav-item>
+                <md-nav-item md-nav-click="goto('documents')" name="documents">More <i class="fa fa-chevron-down"></i></md-nav-item>
+              </md-nav-bar>
+            </div>
+          </div>
+        </md-toolbar>
+    </div>
+
+    <div layout="row">
+      <div flex="80">
+        <div layout="row">
+          <div md-whiteframe="6" flex="45">
+            <md-toolbar>
+              <div class="md-toolbar-tools">
+                <h2>Procedures</h2>
+              </div>
+            </md-toolbar>
+
+            <div layout="row" layout-padding class="patient-profile-panel-header">
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+            </div>
+
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+          </div>
+          <div flex="5"></div>
+          <div md-whiteframe="6" flex="45">
+            <md-toolbar>
+              <div class="md-toolbar-tools">
+                <h2>Diagnosis</h2>
+              </div>
+            </md-toolbar>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-header">
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+            </div>
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div layout="row">
+          <div md-whiteframe="6" flex="45">
+            <md-toolbar>
+              <div class="md-toolbar-tools">
+                <h2>Medication</h2>
+              </div>
+            </md-toolbar>
+            <div layout="row" layout-padding class="patient-profile-panel-header">
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+            </div>
+
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+          </div>
+          <div flex="5"></div>
+          <div md-whiteframe="6" flex="45">
+            <md-toolbar>
+              <div class="md-toolbar-tools">
+                <h2>Last Visits</h2>
+              </div>
+            </md-toolbar>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-header">
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+              <div flex="25">Header</div>
+            </div>
+
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+            
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <div flex="25">Test</div>
+              <div flex="25">This</div>
+              <div flex="25">Shit</div>
+              <div flex="25">Out</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div flex="20">
+        <div layout="row">
+          <div md-whiteframe="6" flex="">
+            <md-toolbar>
+              <div class="md-toolbar-tools">
+                <h2>Allergies</h2>
+              </div>
+            </md-toolbar>
+
+            <div layout="row" layout-wrap layout-padding class="patient-profile-panel-item">
+              <div flex="100">Peanuts</div>
+              <br/>
+              <div flex="100">Kids</div>
+            </div>
+
+            <md-toolbar>
+              <div class="md-toolbar-tools">
+                <h2>Emergency Contacts</h2>
+              </div>
+            </md-toolbar>
+
+            <div layout="row" layout-padding class="patient-profile-panel-item">
+              <md-list class="md-dense">
+                <md-list-item class="md-2-line">
+                  <!--<img ng-src="" class="md-avatar" alt="person" />-->
+                  <i class="fa fa-user md-avatar"></i>
+                  <div class="md-list-item-text" layout="column">
+                    <h3>Smith, Jane</h3>
+                    <h4>Spouse - (314) 555-1234</h4>
+                  </div>
+                </md-list-item>
+              </md-list>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
