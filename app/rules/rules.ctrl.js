@@ -1,6 +1,8 @@
 export default function ($http) {
   var vm = this;
 
+
+
   vm.rules = {
     smoking: false,
     fromAge: null,
@@ -17,9 +19,8 @@ export default function ($http) {
     vm.rules.diagnosis.push('');
   };
 
+  vm.ruleCreated = false;
   vm.createRule = function () {
-    $http.post('/api/createRule', vm.rules).then(response => {
-
-    });
+    vm.ruleCreated = true;
   };
 };

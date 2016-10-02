@@ -35,6 +35,46 @@ html, body {
 	color:rgb(255,171,64) !important;
 }
 
+md-sidenav {
+	overflow: hidden;
+	width: 240px;
+	background: rgb(55,71,79);
+
+	> md-content {
+		height:100%;
+		background: rgb(55,71,79);
+		padding-top:112px;
+		padding-left:16px;
+	}
+
+	md-list {
+		height:100%;
+		md-list-item {
+		.md-button {
+			display:flex;
+			align-items: center;
+			padding:0px 20px;
+			width:100%;
+			margin:0;
+			color: rgba(255, 255, 255, 0.56);
+			font-weight: 500;
+			line-height:56px;
+			border-radius:0px;
+			border-bottom: 1px solid;
+			&:hover {
+			background-color: #ffab40;
+			color: #37474f;
+			}
+			i {
+			font-size:24px;
+			margin-right:10px;
+			vertical-align: middle;
+			}
+		}
+		}
+	}
+}
+
 @import './header/header';
 @import './home/home';
 @import './patient-profile/patient-profile';

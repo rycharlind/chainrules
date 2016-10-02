@@ -1,6 +1,31 @@
-<div class="rules">
-    <div layout="row" layout-align="center start">
-        <div md-whiteframe="6" flex="45">
+<div class="rules" layout="row">
+  <md-sidenav class="side-nav md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" md-whiteframe="4">
+    <md-content>
+      <md-list flex>
+        <md-list-item>
+          <md-button><i class="fa fa-plus"></i> New Rules</md-button>
+        </md-list-item>
+        <md-list-item>
+          <md-button><i class="fa fa-users"></i> Patients</md-button>
+        </md-list-item>
+        <md-list-item>
+          <md-button><i class="fa fa-cog"></i> Settings</md-button>
+        </md-list-item>
+        <md-list-item>
+          <md-button><i class="fa fa-question-circle-o"></i> Help</md-button>
+        </md-list-item>
+      </md-list>
+    </md-content>
+  </md-sidenav>
+  <div layout="column" class="rules-content">
+
+      <div class="success" ng-show="vm.ruleCreated">
+
+          <h1>Success</h1>
+
+      </div>
+
+        <div md-whiteframe="6" ng-hide="vm.ruleCreated">
             <md-toolbar>
                 <div class="md-toolbar-tools">
                     <h2>New Rule</h2>
@@ -8,10 +33,10 @@
             </md-toolbar>
             <div layout-padding>
                 <div class="rules-item">
-                    <label>Smoking</label>
+                    <label>Smoker Status</label>
                     <br/>
                     <br/>
-                    <md-checkbox ng-model="vm.rules.smoking" aria-label="Checkbox 1">
+                    Yes <md-checkbox ng-model="vm.rules.smoking" aria-label="Checkbox 1">
                         
                     </md-checkbox>
                 </div>
@@ -53,5 +78,6 @@
                 <md-button class="md-primary md-raised rules-create-btn" ng-click="vm.createRule()">Create Rule</md-button>
             </div>
         </div>
-    </div>
+    
+  </div>
 </div>
