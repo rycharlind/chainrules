@@ -1,9 +1,28 @@
-<div class="patient-rules">
-    <div class="patient-rules-content">
-        <div class="patient-rules-header">
+<div class="patient-rules" layout="row">
+    <md-sidenav class="side-nav md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" md-whiteframe="4">
+        <md-content>
+            <md-list flex>
+                <md-list-item>
+                <md-button><i class="fa fa-plus"></i> New Rules</md-button>
+                </md-list-item>
+                <md-list-item>
+                <md-button><i class="fa fa-users"></i> Patients</md-button>
+                </md-list-item>
+                <md-list-item>
+                <md-button><i class="fa fa-cog"></i> Settings</md-button>
+                </md-list-item>
+                <md-list-item>
+                <md-button><i class="fa fa-question-circle-o"></i> Help</md-button>
+                </md-list-item>
+            </md-list>
+        </md-content>
+    </md-sidenav>
+    <div layout="column" class="patient-rules-content">
+            
+        <div md-whiteframe="6" ng-hide="vm.ruleCreated">
             <md-toolbar>
-                <div class="md-toolbar-tools">        
-                    <div layout="row" layout-align="start center" flex="80">
+                <div class="md-toolbar-tools">   
+                    <div layout="row" layout-align="start center" flex="70">
                         <md-input-container>
                             <label>Organization</label>
                             <md-select ng-model="vm.organization">
@@ -30,13 +49,10 @@
                             </md-select>
                         </md-input-container>
                     </div>
-                    <md-button flex="10" class="md-primary md-raised" ng-click="vm.applyRule()">Apply Rule</md-button>
+                    <md-button flex class="md-primary md-raised" ng-click="vm.applyRule()">Apply Rule</md-button>
                 </div>
             </md-toolbar>
-        </div>
-        
-        <div layout="row" layout-align="center start">
-            <div md-whiteframe="6" flex="60">
+            <div layout-padding>
                 <div ng-repeat="patient in vm.patients" layout="row" class="patient-rules-item" layout-align="start center">
                     <div flex="25">{{ patient.lastName }}, {{ patient.firstName }}</div>
                     <div flex="25">{{ patient.patientCode }}</div>

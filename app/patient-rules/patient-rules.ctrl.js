@@ -38,8 +38,8 @@ export default function ($timeout) {
         age: 56,
         accept: null
     },{
-        firstName: 'McDonald',
-        lastName: 'Ron',
+        firstName: 'Ron',
+        lastName: 'McDonald',
         patientCode: 'MCDRO1234',
         dob: '09/09/00',
         age: 16,

@@ -17,67 +17,66 @@
       </md-list>
     </md-content>
   </md-sidenav>
+
   <div layout="column" class="rules-content">
 
-      <div class="success" ng-show="vm.ruleCreated">
+    <div class="success" ng-show="vm.ruleCreated">
+        <h1>Success</h1>
+    </div>
 
-          <h1>Success</h1>
-
-      </div>
-
-        <div md-whiteframe="6" ng-hide="vm.ruleCreated">
-            <md-toolbar>
-                <div class="md-toolbar-tools">
-                    <h2>New Rule</h2>
-                </div>
-            </md-toolbar>
-            <div layout-padding>
-                <div class="rules-item">
-                    <label>Smoker Status</label>
-                    <br/>
-                    <br/>
-                    Yes <md-checkbox ng-model="vm.rules.smoking" aria-label="Checkbox 1">
-                        
-                    </md-checkbox>
-                </div>
-                <div class="rules-item">
-                    <label>Age limits</label>
-                    <br/>
-                    <md-input-container>
-                        <label>From Age</label>
-                        <input ng-model="vm.rules.fromAge">
-                    </md-input-container>
-                    -
-                    <md-input-container>
-                        <label>To Age</label>
-                        <input ng-model="vm.rules.toAge">
-                    </md-input-container>
-                </div>
-                <div class="rules-item">
-                    <label>Medications</label>
-                    <br/>
-                    <div layout="column" flex="50">
-                        <md-input-container ng-repeat="medication in vm.rules.medications track by $index"> 
-                            <label>Medication {{$index + 1}}</label>
-                            <input ng-model="vm.rules.medications[$index]">
-                        </md-input-container>
-                    </div>
-                    <md-button class="md-primary" ng-click="vm.addMedication()">Add another medication</md-button>
-                </div>
-                <div class="rules-item"> 
-                    <label>Diagnosis</label>
-                    <br/>
-                    <div layout="column" flex="50">
-                        <md-input-container ng-repeat="medication in vm.rules.diagnosis track by $index"> 
-                            <label>Diagnosis {{$index + 1}}</label>
-                            <input ng-model="vm.rules.diagnosis[$index]">
-                        </md-input-container>
-                    </div>
-                    <md-button class="md-primary" ng-click="vm.addDiagnosis()">Add another diagnosis</md-button>
-                </div>
-                <md-button class="md-primary md-raised rules-create-btn" ng-click="vm.createRule()">Create Rule</md-button>
+    <div md-whiteframe="6" ng-hide="vm.ruleCreated">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>New Rule</h2>
             </div>
+        </md-toolbar>
+        <div layout-padding>
+            <div class="rules-item">
+                <label>Smoker Status</label>
+                <br/>
+                <br/>
+                Yes <md-checkbox ng-model="vm.rules.smoking" aria-label="Checkbox 1">
+                    
+                </md-checkbox>
+            </div>
+            <div class="rules-item">
+                <label>Age limits</label>
+                <br/>
+                <md-input-container>
+                    <label>From Age</label>
+                    <input ng-model="vm.rules.fromAge">
+                </md-input-container>
+                -
+                <md-input-container>
+                    <label>To Age</label>
+                    <input ng-model="vm.rules.toAge">
+                </md-input-container>
+            </div>
+            <div class="rules-item">
+                <label>Medications</label>
+                <br/>
+                <div layout="column" flex="50">
+                    <md-input-container ng-repeat="medication in vm.rules.medications track by $index"> 
+                        <label>Medication {{$index + 1}}</label>
+                        <input ng-model="vm.rules.medications[$index]">
+                    </md-input-container>
+                </div>
+                <md-button class="md-primary" ng-click="vm.addMedication()">Add another medication</md-button>
+            </div>
+            <div class="rules-item"> 
+                <label>Diagnosis</label>
+                <br/>
+                <div layout="column" flex="50">
+                    <md-input-container ng-repeat="medication in vm.rules.diagnosis track by $index"> 
+                        <label>Diagnosis {{$index + 1}}</label>
+                        <input ng-model="vm.rules.diagnosis[$index]">
+                    </md-input-container>
+                </div>
+                <md-button class="md-primary" ng-click="vm.addDiagnosis()">Add another diagnosis</md-button>
+            </div>
+            <md-button class="md-primary md-raised rules-create-btn" ng-click="vm.createRule()">Create Rule</md-button>
         </div>
+    </div>
     
   </div>
 </div>

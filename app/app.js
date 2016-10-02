@@ -16,7 +16,7 @@ import PatientProfileCtrl from './patient-profile/patient-profile.ctrl.js';
 import RulesCtrl from './rules/rules.ctrl';
 import PatientRulesCtrl from './patient-rules/patient-rules.ctrl';
 
-let module = angular.module('policyAlertApp', ['ui.router', 'ngMaterial', 'ngMessages'])
+let module = angular.module('exchangeApp', ['ui.router', 'ngMaterial', 'ngMessages'])
     .component('paHeader', HeaderComp)
     .controller('HeaderCtrl', HeaderCtrl)
     .controller('HomeCtrl', HomeCtrl)
