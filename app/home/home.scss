@@ -8,12 +8,16 @@
     height:100%;
     background-size:cover;
     background-position:50% 0;
+    background-image:url('./image/home-bg2.png');
     opacity: 0.42;
-    z-index: 1;
   }
 
   &-content {
-    z-index: 2;
+
+    text-align: center;
+
+    z-index:2;
+
     padding:116px 64px;
 
     width:100%;
@@ -38,11 +42,28 @@
   }
 
   h1 {
-    font-size: 4.5em;
+    font-size: 52px;
+    font-weight: bold;
+    color: #4a4a4a;
   }
 
   h3 {
-    font-size: 2.5em;
+    font-size: 34px;
+	  font-weight: bold;
+	  color: rgba(74, 74, 74, 0.7);
+  }
+
+  .cta-button {
+    margin-top:100px;
+    width: 300px;
+	  height: 75px;
+	  border-radius: 8px;
+  	background-color: #2196f2;
+	  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+	  font-weight: bold;
+	  text-align: center;
+	  color: #ffffff;
   }
 
   &-register-btn {
@@ -50,4 +71,5 @@
     height: 56px;
     width: 220px;
   }
+
 }
