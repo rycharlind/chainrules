@@ -4,6 +4,7 @@ export default function ($http) {
 
 
   vm.rules = {
+    name: null,
     smoking: false,
     fromAge: null,
     toAge: null,
