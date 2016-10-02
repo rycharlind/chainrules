@@ -8,6 +8,7 @@ import 'lodash';
 require('angular-material/angular-material.css');
 require('font-awesome/css/font-awesome.css');
 require('./app.scss');
+require('./image/home-bg2.png');
 import AppRouter from './app-router.js'
 import HeaderComp from './header/header.comp.js';
 import HeaderCtrl from './header/header.ctrl.js';
