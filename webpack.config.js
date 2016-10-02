@@ -172,7 +172,7 @@ module.exports = function makeWebpackConfig () {
             new HtmlWebpackPlugin({
                 template: './app/index.ejs',
                 inject: 'body',
-                title: 'Global Insights',
+                title: 'eXchange',
                 hash: true
             })
         );

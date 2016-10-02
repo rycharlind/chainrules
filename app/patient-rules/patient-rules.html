@@ -3,42 +3,47 @@
         <div class="patient-rules-header">
             <md-toolbar>
                 <div class="md-toolbar-tools">        
-                    <div layout="row" layout-align="start center">
+                    <div layout="row" layout-align="start center" flex="80">
                         <md-input-container>
                             <label>Organization</label>
                             <md-select ng-model="vm.organization">
-                                <md-option ng-value="insurance">Insurance</md-option>
-                                <md-option ng-value="university">University</md-option>
+                                <md-option value="insurance">Insurance</md-option>
+                                <md-option value="university">University</md-option>
                             </md-select>
                         </md-input-container>
 
                         <md-input-container>
                             <label>Carrier</label>
                             <md-select ng-model="vm.carrier">
-                                <md-option ng-value="allstate">Allstate</md-option>            
-                                <md-option ng-value="geico">Geico</md-option>            
-                                <md-option ng-value="stateFarm">State Farm</md-option>       
+                                <md-option value="allstate">Allstate</md-option>            
+                                <md-option value="geico">Geico</md-option>            
+                                <md-option value="stateFarm">State Farm</md-option>       
                             </md-select>
                         </md-input-container>
 
                         <md-input-container>
                             <label>Rule</label>
                             <md-select ng-model="vm.rule">
-                                <md-option ng-value="superPreferred">Super Preferred</md-option>            
-                                <md-option ng-value="preferred">Preferred</md-option>            
-                                <md-option ng-value="substandard">Substandard</md-option>        
+                                <md-option value="superPreferred">Super Preferred</md-option>            
+                                <md-option value="preferred">Preferred</md-option>            
+                                <md-option value="substandard">Substandard</md-option>        
                             </md-select>
                         </md-input-container>
                     </div>
+                    <md-button flex="10" class="md-primary md-raised" ng-click="vm.applyRule()">Apply Rule</md-button>
                 </div>
             </md-toolbar>
         </div>
-    </div>
-
-    <div layout="row">
-        <div ng-repeat="patient in patients">
-            
+        
+        <div layout="row" layout-align="center start">
+            <div md-whiteframe="6" flex="60">
+                <div ng-repeat="patient in vm.patients" layout="row" class="patient-rules-item" layout-align="start center">
+                    <div flex="25">{{ patient.lastName }}, {{ patient.firstName }}</div>
+                    <div flex="25">{{ patient.patientCode }}</div>
+                    <div flex="25">{{ patient.dob }}</div>
+                    <div flex="25">{{ patient.accept !== false ? patient.accept !== true ? '' : 'Accepted' : 'Declined' }} </div>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 </div>

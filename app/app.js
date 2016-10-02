@@ -29,7 +29,7 @@ module.config(AppRouter);
 module.config(($mdThemingProvider) => {
   $mdThemingProvider.theme('default')
       .primaryPalette('blue')
-      .accentPalette('blue');
+      .accentPalette('deep-orange');
 });
 
 export default module;
